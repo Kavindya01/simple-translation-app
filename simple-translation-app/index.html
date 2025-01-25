@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Translation App</h1>
+        
+        <!-- Language selection -->
+        <div class="language-select">
+            <select id="sourceLanguage">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="ar">Arabic</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <span>to</span>
+            <select id="targetLanguage">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="ar">Arabic</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
+
+        <!-- Text area for input -->
+        <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+
+        <!-- Translate button -->
+        <button id="translateBtn">Translate</button>
+
+        <!-- Display output -->
+        <div class="output">
+            <p id="translatedText"></p>
+        </div>
+
+        <!-- RTL toggle -->
+        <label for="rtlToggle">
+            <input type="checkbox" id="rtlToggle"> Enable RTL (Right to Left)
+        </label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
